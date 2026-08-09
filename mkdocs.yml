@@ -87,6 +87,5 @@ markdown_extensions:
 
   - pymdownx.blocks.caption
 
-# Keep this only if you use custom CSS in docs/stylesheets/extra.css
 extra_css:
   - stylesheets/extra.css
