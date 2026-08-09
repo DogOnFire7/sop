@@ -9,10 +9,10 @@ theme:
   features:
     - navigation.sections
     - navigation.path
-    - navigation.expand
     - navigation.tabs
     - navigation.tabs.sticky
     - toc.follow
+    - navigation.top
     
   palette: 
 
