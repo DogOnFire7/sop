@@ -2,6 +2,20 @@ site_name: Sri Lanka & Maldives vACC Documentation
 site_description: Controller procedures, SOPs, references and training documentation for the Sri Lanka & Maldives vACC.
 site_url: https://dogonfire7.github.io/srmvacc-docs/
 
+nav:
+  - Home: index.md
+
+  - Maldives:
+      - Velana International Airport (VRMM):
+          - 0. Document information: maldives/vrmm/document-information.md
+          - 1. Aerodrome information: maldives/vrmm/aerodrome-information.md
+          - 2. Area of responsibility: maldives/vrmm/area-of-responsibility.md
+          - 3. Clearance procedures: maldives/vrmm/clearance-procedures.md
+          - 4. Pushback & startup procedures: maldives/vrmm/pushback-startup.md
+          - 5. Taxi procedures: maldives/vrmm/taxi-procedures.md
+          - 6. Takeoff & landing procedures: maldives/vrmm/takeoff-landing.md
+          - 7. VFR & Seaplane procedures: maldives/vrmm/vfr-seaplane.md
+          
 theme:
   name: material
   language: en
