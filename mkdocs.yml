@@ -2,8 +2,8 @@ site_name: Sri Lanka and Maldives vACC - Documentation
 site_url: https://dogonfire7.github.io/srmvacc-docs/
 theme:
   name: material
-  # font: Josefin Sans
-  #   text:
+  # font:
+  #   text: Josefin Sans
   icon:
     logo: material/palm-tree
   features:
