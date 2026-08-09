@@ -7,8 +7,14 @@ theme:
   icon:
     logo: material/palm-tree
   features:
+    - navigation.sections
+    - navigation.path
+    - navigation.expand
     - navigation.tabs
     - navigation.tabs.sticky
+    - toc.follow
+    - toc.integrate
+    
   palette: 
 
     # Palette toggle for light mode
