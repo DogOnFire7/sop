@@ -1,58 +1,92 @@
-site_name: Sri Lanka and Maldives vACC - Documentation 
+site_name: Sri Lanka & Maldives vACC Documentation
+site_description: Controller procedures, SOPs, references and training documentation for the Sri Lanka & Maldives vACC.
 site_url: https://dogonfire7.github.io/srmvacc-docs/
+
 theme:
   name: material
-  # font:
-  #   text: Josefin Sans
+  language: en
+
   icon:
     logo: material/palm-tree
+
+  font:
+    text: Inter
+    code: JetBrains Mono
+
   features:
-    - navigation.sections
-    - navigation.path
+    # Navigation
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+
+    # Documentation Navigation
     - navigation.tabs
     - navigation.tabs.sticky
-    - toc.follow
+    - navigation.sections
+    - navigation.path
     - navigation.top
-    
-  palette: 
+    - toc.follow
 
-    # Palette toggle for light mode
-    - scheme: default
+    # Search Bar
+    - search.suggest
+    - search.highlight
+
+    # Content
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
       toggle:
-        icon: material/brightness-7 
+        icon: material/weather-night
         name: Switch to dark mode
-      primary: indigo
-      accent: blue grey
 
-    # Palette toggle for dark mode
-    - scheme: slate
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: Switch to light mode
-      primary: indigo
-      accent: blue grey
 
-markdown_extensions: 
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
   - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - tables
+  - abbr
+  - md_in_html
+
+  - pymdownx.details
+
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
+
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-  - pymdownx.superfences
+
   - pymdownx.tabbed:
       alternate_style: true
-  - admonition
-  - pymdownx.details
-  - tables
-  - attr_list
-  - md_in_html
+
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
   - pymdownx.blocks.caption
 
+# Keep this only if you use custom CSS in docs/stylesheets/extra.css
 extra_css:
   - stylesheets/extra.css
